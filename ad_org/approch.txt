@@ -1,0 +1,16 @@
+Approch:-
+
+1.) Importing data 
+2.) No missing values found but there are some faulty value in  some variables.
+3.) Combine all data and then Convert 'F' values with nan .
+4.) Carried out values from duration and published column also created 2 new variables as total seconds & watch(user has just view that add or vid)
+5.) Imputed nan values with Randomforest as that's fit better than mean, median , K-nearest neighbour and LR imputation.
+6.) Done some more analysis over data and found that most of data is right sckewed.(target variable too)
+7.) Check for outliers and imputed them with mean.
+8.) Check for correlation but not such hight correlation found in data.
+9.) Scaling of Independent variables (mean = 0 and unit variance)
+10.) Use SelectKbest for selecting top features // Also tried PCA on dummy variables for best feature selection
+11.) Created validation set & Applied three models (Linear regression, Decision Tree, Random Forest)
+12.) Crossvalidate all models and Randomforest fits best among others.
+13.) Also iuse a different approch by prediction from different models and then try their mean as the final prediction but result were same as random forest.
+14.) Final Model = Random Forest & generate prediction on it. 
